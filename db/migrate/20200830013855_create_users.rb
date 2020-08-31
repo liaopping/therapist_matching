@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :email, null:false, unique: true
       t.string :sex, null:false
       t.integer :age, null:false
-      t.string :pref, null:false
+      t.integer :pref, null:false
       t.string :user_type, null:false
       t.string :password, null:false
       t.string :image

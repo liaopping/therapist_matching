@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_08_30_083700) do
     t.string "email", null: false
     t.string "sex", null: false
     t.integer "age", null: false
-    t.string "pref", null: false
+    t.integer "pref", null: false
     t.string "user_type", null: false
     t.string "password", null: false
     t.string "image"

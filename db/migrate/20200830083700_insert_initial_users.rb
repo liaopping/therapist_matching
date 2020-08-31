@@ -4,7 +4,7 @@ class InsertInitialUsers < ActiveRecord::Migration[5.2]
               "email" => "ichiro@example.com",
               "sex" => "male",
               "age" => 10,
-              "pref" => "北海道",
+              "pref" => 1,
               "user_type" => "admin",
               "password" => "password"
             }
@@ -12,7 +12,7 @@ class InsertInitialUsers < ActiveRecord::Migration[5.2]
               "email" => "futako@example.com",
               "sex" => "female",
               "age" => 20,
-              "pref" => "北海道",
+              "pref" => 1,
               "user_type" => "general",
               "password" => "password"
             }
@@ -20,7 +20,7 @@ class InsertInitialUsers < ActiveRecord::Migration[5.2]
               "email" => "saburo@example.com",
               "sex" => "male",
               "age" => 30,
-              "pref" => "北海道",
+              "pref" => 1,
               "user_type" => "therapist",
               "password" => "password"
             }
@@ -28,7 +28,7 @@ class InsertInitialUsers < ActiveRecord::Migration[5.2]
              "email" => "yonko@example.com",
              "sex" => "female",
              "age" => 40,
-             "pref" => "青森県",
+             "pref" => 2,
              "user_type" => "general",
              "password" => "password"
             }
@@ -36,7 +36,7 @@ class InsertInitialUsers < ActiveRecord::Migration[5.2]
             "email" => "goro@example.com",
             "sex" => "male",
             "age" => 50,
-            "pref" => "青森県",
+            "pref" => 2,
             "user_type" => "therapist",
             "password" => "password"
             }
