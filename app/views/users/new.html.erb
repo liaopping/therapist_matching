@@ -11,7 +11,14 @@
       <%= f.email_field :email %>
 
       <%= f.label :sex %>
-      <%= f.select :sex, [["男性", "male"], ["女性", "female"], ["その他", "other"]], include_blank: true %>
+      <%= f.radio_button :user_type, :男性, checked: true %>
+      <%= f.label :男性 %>
+      <%= f.radio_button :user_type, :女性 %>
+      <%= f.label :女性 %>
+      <%= f.radio_button :user_type, :その他 %>
+      <%= f.label :その他 %>
+      <%= f.radio_button :user_type, :無回答 %>
+      <%= f.label :無回答 %>
 
       <%= f.label :age %>
       <%= f.text_field :age %>
@@ -19,16 +26,30 @@
       <%= f.label :pref %>
       <%= f.select :pref, User.prefs.keys, include_blank: true %>
 
-      <%= f.radio_button :user_type, 0 %>
-      <%= f.label :user_type, 0 %>
-      <%= f.radio_button :user_type, 1 %>
-      <%= f.label :user_type, 1 %>
+      <%= f.label :user_type %>
+      <%= f.radio_button :user_type, :施術を受けたい人, checked: true %>
+      <%= f.label :施術を受けたい人 %>
+      <%= f.radio_button :user_type, :施術をしたい人 %>
+      <%= f.label :施術をしたい人 %>
 
       <%= f.label :image %>
       <%= f.text_field :image %>
 
       <%= f.label :treatment_type %>
-      <%= f.select :treatment_type, ["理学療法士", "作業療法士", "登録カイロプラクター", "はり師", "きゅう師", "あん摩マッサージ指圧師", "柔道整復師"], include_blank: true %>
+      <%= f.radio_button :user_type, :理学療法士, checked: true %>
+      <%= f.label :理学療法士 %>
+      <%= f.radio_button :user_type, :作業療法士 %>
+      <%= f.label :作業療法士 %>
+      <%= f.radio_button :user_type, :登録カイロプラクター %>
+      <%= f.label :登録カイロプラクター %>
+      <%= f.radio_button :user_type, :はり師 %>
+      <%= f.label :はり師 %>
+      <%= f.radio_button :user_type, :きゅう師 %>
+      <%= f.label :きゅう師 %>
+      <%= f.radio_button :user_type, :あん摩マッサージ指圧師 %>
+      <%= f.label :あん摩マッサージ指圧師 %>
+      <%= f.radio_button :user_type, :柔道整復師 %>
+      <%= f.label :柔道整復師 %>
 
       <%= f.label :password %>
       <%= f.password_field :password %>
