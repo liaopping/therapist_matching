@@ -1,0 +1,42 @@
+<% provide(:title, 'Sign up') %>
+<h1>ユーザー登録</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with model: @user do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+
+      <%= f.label :sex %>
+      <%= f.select :sex, [["男性", "male"], ["女性", "female"], ["その他", "other"]], include_blank: true %>
+
+      <%= f.label :age %>
+      <%= f.text_field :age %>
+
+      <%= f.label :pref %>
+      <%= f.select :pref, User.prefs.keys, include_blank: true %>
+
+      <%= f.radio_button :user_type, 0 %>
+      <%= f.label :user_type, 0 %>
+      <%= f.radio_button :user_type, 1 %>
+      <%= f.label :user_type, 1 %>
+
+      <%= f.label :image %>
+      <%= f.text_field :image %>
+
+      <%= f.label :treatment_type %>
+      <%= f.select :treatment_type, ["理学療法士", "作業療法士", "登録カイロプラクター", "はり師", "きゅう師", "あん摩マッサージ指圧師", "柔道整復師"], include_blank: true %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%# <%= f.label :password_confirmation, "Confirmation" %>
+      <%# <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "この内容で登録する", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
