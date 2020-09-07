@@ -1,24 +1,46 @@
-# README
+# 治療家マッチングアプリ
+### 目的 ： 空き時間を有効活用したい治療家と、施術を受ける時間を柔軟に決めたいユーザーのマッチング
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**一般ユーザー機能**
+- [ ] 会員登録
+- [ ] ログイン＆ログアウト
+- [ ] プロフィール編集
+- [ ] お気に入り
+- [ ] 治療家の予約
+- [ ] チャット
+- [ ] 退会
 
-Things you may want to cover:
+**治療家ユーザー機能**
+- [ ] 会員登録
+- [ ] ログイン＆ログアウト
+- [ ] プロフィール編集
+- [ ] シフト表登録
+- [ ] チャット
+- [ ] 退会
 
-* Ruby version
+**管理者ユーザー機能**
+- [ ] 会員登録
+- [ ] ログイン＆ログアウト
+- [ ] プロフィール編集
+- [ ] ユーザー削除
 
-* System dependencies
+**余裕があれば実装したい機能**
+- [ ] 画像付き日記
+- [ ] ビデオ通話
 
-* Configuration
+**ページ**
+- [ ] 治療家一覧（ログイン順、お気に入り多い順）
+- [ ] ユーザー検索（名前、性別、年齢）
+- [ ] マイページ（名前、メアド、お気に入り一覧）
+- [ ] 治療家詳細（名前、性別、年齢、治療タイプ、PRコメント）
+- [ ] チャット
+- [ ] 予約（日時、待ち合わせ場所、名前、拘束時間）
+- [ ] 予約完了
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**余裕があれば実装したいページ**
+- [ ] その他（利用規約、ポリシー、運営者情報、サービス説明）
+- [ ] リクエスト、チャットが届いたらメールで通知
+- [ ] 画像付き日記一覧（タイムラインタブ）
+- [ ] 一言（ユーザー詳細ページ）
+- [ ] 他ユーザーからの一言（ユーザー詳細ページ）
+- [ ] ビデオ通話
