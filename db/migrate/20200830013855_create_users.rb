@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.integer :age, null:false
       t.integer :pref, null:false
       t.integer :user_type, null:false
-      t.string :password, null:false
+      t.string :password_digest, null:false
       t.string :image
       t.integer :treatment_type
       t.string :comment
