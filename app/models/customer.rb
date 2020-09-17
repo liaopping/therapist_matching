@@ -1,6 +1,6 @@
 class Customer < ApplicationRecord
   has_secure_password
-  # mount_uploader :image, ImageUploader
+  mount_uploader :image, ImageUploader
   enum sex: {
     男性:0, 女性:1, その他:2, 無回答:3
   }
