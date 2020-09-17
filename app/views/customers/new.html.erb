@@ -20,7 +20,7 @@
       <%= f.select :pref, Customer.prefs.keys, include_blank: true %>
 
       <%= f.label :image %>
-      <%= f.text_field :image %>
+      <%= f.file_field :image %>
 
       <%= f.label :password %>
       <%= f.password_field :password %>
