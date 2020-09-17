@@ -17,6 +17,7 @@ gem 'mini_magick', '4.7.0'
 gem 'dotenv-rails'
 gem 'bcrypt'
 gem 'rails-i18n', '~> 5.1'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
