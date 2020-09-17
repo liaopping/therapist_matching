@@ -1,0 +1,10 @@
+ja:
+  customers:
+    new:
+      id: ID
+      name: 名前
+      email: Email
+      sex: 性別
+      age: 年齢
+      pref: 居住地（県）
+      password: パスワード
