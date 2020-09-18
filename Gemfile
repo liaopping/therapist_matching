@@ -19,6 +19,8 @@ gem 'bcrypt'
 gem 'rails-i18n', '~> 5.1'
 gem 'devise'
 gem 'omniauth'
+# gem 'ancestry' #カテゴリー
+# gem 'devise_token_auth'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
