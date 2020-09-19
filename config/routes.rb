@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'therapists#index'
+  root 'pages#top'
   devise_for :therapists, controllers: {
     sessions: 'therapists/sessions'
   }
