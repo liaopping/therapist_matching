@@ -31,9 +31,19 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # mailer setting
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true #change
   config.action_mailer.perform_caching = false
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :enable_starttls_auto => true,
+    :address => "smtp.gmail.com",
+    :port => 587,
+    :domain => "smtp.gmail.com",
+    :user_name => ENV["MY_GMAIL_ADDRESS"],
+    :password => ENV["MY_GMAIL_PASSWORD"],
+    :authentication => "login",
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
