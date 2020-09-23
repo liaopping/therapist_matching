@@ -19,6 +19,9 @@ gem 'bcrypt'
 gem 'rails-i18n', '~> 5.1'
 gem 'devise'
 gem 'omniauth'
+gem 'kaminari'
+gem 'seed-fu'
+gem 'faker'
 # gem 'ancestry' #カテゴリー
 # gem 'devise_token_auth'
 
