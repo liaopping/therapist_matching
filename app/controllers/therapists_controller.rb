@@ -1,5 +1,5 @@
 class TherapistsController < ApplicationController
   def index
-    @therapist = Therapist.all
+    @therapists = Therapist.all.page(params[:page])
   end
 end
