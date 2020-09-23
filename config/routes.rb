@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   devise_for :customers, controllers: {
     sessions: 'customers/sessions'
   }
-  get '/login', to: 'sessions#new'
-  post '/login', to: 'sessions#create'
-  delete '/logout', to: 'sessions#destroy'
-  # resources :customers
+  # get '/login', to: 'sessions#new'
+  # post '/login', to: 'sessions#create'
+  # delete '/logout', to: 'sessions#destroy'
+  resources :customers
+  resources :therapists
 end
