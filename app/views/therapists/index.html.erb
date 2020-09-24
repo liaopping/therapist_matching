@@ -1,9 +1,7 @@
 <h1>セラピスト一覧</h1>
 <ul>
   <% @therapists.each do |therapist| %>
-    <li><%= therapist.name %></li>
-    <li><%= therapist.license %></li>
-    <li><%= therapist.self_introduction %></li>
+    <li><%= image_tag therapist.image %><%= therapist.name %><%= therapist.license %><%= therapist.self_introduction %></li>
   <% end %>
 </ul>
 
